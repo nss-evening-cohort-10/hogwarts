@@ -174,3 +174,7 @@ const students = [
     houseId: 'house4',
   },
 ];
+
+const getStudents = () => students;
+
+export default { getStudents };

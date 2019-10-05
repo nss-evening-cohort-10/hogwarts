@@ -20,3 +20,11 @@ const houses = [
     picture: 'https://vignette.wikia.nocookie.net/harrypotter/images/b/b1/Hufflepuff%E2%84%A2_Quidditch%E2%84%A2_Badge.png/revision/latest?cb=20091129181210',
   },
 ];
+
+// const getHouses = () => {
+//   return houses;
+// };
+
+const getHouses = () => houses;
+
+export default { getHouses };
