@@ -1,0 +1,40 @@
+@import '../../../styles/colors';
+@import '../../../styles/variables';
+
+
+nav {
+  background-color: $lightgray;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 56px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  box-shadow: $box-shadow;
+
+  .brand {
+    font-size: 30px;
+    line-height: 56px;
+    color: $white;
+  }
+
+  ul {
+    list-style-type: none;
+    float: right;
+    line-height: 56px;
+
+    li {
+      color: white;
+      padding: 0 10px;
+
+      &:hover {
+        background-color: $darkgray;
+      }
+
+      a {
+        color: $white;
+      }
+    }
+  }
+}
