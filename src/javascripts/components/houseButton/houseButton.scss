@@ -1,0 +1,45 @@
+@import '../../../styles/colors';
+@import '../../../styles/variables';
+
+%house-button {
+  box-shadow: $box-shadow;
+  @include default-font(14px);
+  outline: 0;
+  border: none;
+  border-radius: 2px;
+  height: 42px;
+  line-height: 42px;
+  padding: 0 16px;
+  margin: 20px;
+
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  img {
+    display: inline-block;
+    padding-left: 20px;
+    max-width: 40px;
+    max-height: 40px;
+  }
+}
+
+.house-button-gryffindor {
+  @extend %house-button;
+  background-color: $gryffindor;
+}
+
+.house-button-slytherin {
+  @extend %house-button;
+  background-color: $slytherin;
+}
+
+.house-button-ravenclaw {
+  @extend %house-button;
+  background-color: $ravenclaw;
+}
+
+.house-button-hufflepuff {
+  @extend %house-button;
+  background-color: $hufflepuff;
+}
