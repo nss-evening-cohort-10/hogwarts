@@ -14,9 +14,8 @@ nav {
   box-shadow: $box-shadow;
 
   .brand {
-    font-size: 30px;
+    @include default-font(30px);
     line-height: 56px;
-    color: $white;
   }
 
   ul {
@@ -25,7 +24,6 @@ nav {
     line-height: 56px;
 
     li {
-      color: white;
       padding: 0 10px;
 
       &:hover {
@@ -33,7 +31,7 @@ nav {
       }
 
       a {
-        color: $white;
+        @include default-font(15px);
       }
     }
   }
